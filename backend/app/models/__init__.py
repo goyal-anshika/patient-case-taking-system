@@ -4,6 +4,7 @@ from .case import PatientCase
 from .case_response import CaseResponse
 from .document import Document
 from .consultation import Consultation
+from .user import User
 
 __all__ = [
     "Patient",
@@ -12,4 +13,5 @@ __all__ = [
     "CaseResponse",
     "Document",
     "Consultation",
+    "User",
 ]
