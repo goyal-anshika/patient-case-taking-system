@@ -39,3 +39,10 @@ htmlcov/
 *.db
 *.sqlite
 *.sqlite3
+
+# Uploaded patient documents
+backend/uploads/
+
+# IDE
+.vscode/
+.idea/

@@ -1,20 +1,25 @@
-# Patient Case-Taking System
-
-AI-powered patient case-taking and pre-consultation software developed for
-Smart India Hackathon 2026.
-
-## Problem Statement
-
-SIH26047 - Patient Case-Taking Software
-
-## Theme
-
-MedTech / BioTech / HealthTech
-
-## Core Workflow
-
-IDENTIFY → CONVERSE → SCAN → SUMMARISE → CONSULT
-
 ## Project Status
 
-Phase 1 - Foundation and Database
+### Phase 1 - Foundation
+- [x] GitHub repository
+- [x] Project structure
+- [x] PostgreSQL database
+- [x] SQLAlchemy models
+- [x] Alembic migrations
+
+### Phase 2 - Backend/API
+- [x] Authentication
+- [x] JWT authorization
+- [x] Patient APIs
+- [x] Consent APIs
+- [x] Case APIs
+- [x] Case-response APIs
+- [x] Document upload APIs
+- [x] Consultation APIs
+- [x] CORS
+- [x] API documentation
+- [x] Basic API tests
+
+### Upcoming
+
+Phase 3 - AI and Search

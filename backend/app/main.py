@@ -10,6 +10,12 @@ from .routes import (
     case_responses,
     documents,
     consultations,
+    speech,
+    conversation,
+    ocr,
+    summarization,
+    ai_pipeline,
+    ai_case,
 )
 
 
@@ -40,6 +46,12 @@ app.include_router(cases.router)
 app.include_router(case_responses.router)
 app.include_router(documents.router)
 app.include_router(consultations.router)
+app.include_router(speech.router)
+app.include_router(conversation.router)
+app.include_router(ocr.router)
+app.include_router(summarization.router)
+app.include_router(ai_pipeline.router)
+app.include_router(ai_case.router)
 
 
 @app.get("/")

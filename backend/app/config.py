@@ -14,6 +14,12 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     SECRET_KEY: str
 
+    OPENROUTER_API_KEY: str | None = None
+    OPENROUTER_MODEL: str = "YOUR_MODEL_ID"
+    
+    SPEECH_PROVIDER: str = "mock"
+    OCR_PROVIDER: str = "paddleocr"
+
     model_config = SettingsConfigDict(
         env_file=BASE_DIR / ".env",
         extra="ignore",
@@ -21,3 +27,4 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+
