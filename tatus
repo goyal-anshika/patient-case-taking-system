@@ -1,0 +1,41 @@
+[33mcommit c0a2ccd547431643cee571fb67230057c8c8fe70[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Anshika Goyal <anshika1906.india@gmail.com>
+Date:   Sun Sep 6 00:12:03 2026 +0530
+
+    refactor: establish phase 3 AI architecture
+
+ .env.example                                   |  12 [32m+++[m[31m-[m
+ .gitignore                                     |   9 [32m++[m[31m-[m
+ README.md                                      |  41 [32m++++++[m[31m-----[m
+ backend/app/ai/__init__.py                     |   0
+ backend/app/ai/common/__init__.py              |   0
+ backend/app/ai/common/confidence.py            |  11 [32m+++[m
+ backend/app/ai/common/schemas.py               |  25 [32m+++++++[m
+ backend/app/ai/conversation/__init__.py        |   0
+ backend/app/ai/conversation/llm_service.py     |  73 [32m++++++++++++++++++++[m
+ backend/app/ai/conversation/ontology.py        |  30 [32m++++++++[m
+ backend/app/ai/conversation/prompts.py         |   0
+ backend/app/ai/conversation/question_engine.py |  15 [32m++++[m
+ backend/app/ai/ocr/__init__.py                 |   0
+ backend/app/ai/ocr/entity_extractor.py         |  15 [32m++++[m
+ backend/app/ai/ocr/ocr_service.py              |  56 [32m+++++++++++++++[m
+ backend/app/ai/speech/__init__.py              |   0
+ backend/app/ai/speech/providers/__init__.py    |  13 [32m++++[m
+ backend/app/ai/speech/providers/ai4bharat.py   |  54 [32m+++++++++++++++[m
+ backend/app/ai/speech/providers/mock.py        |  12 [32m++++[m
+ backend/app/ai/speech/speech_service.py        |  12 [32m++++[m
+ backend/app/ai/summarization/__init__.py       |   0
+ backend/app/ai/summarization/case_summary.py   |  76 [32m++++++++++++++++++++[m
+ backend/app/config.py                          |   9 [32m++[m[31m-[m
+ backend/app/main.py                            |  12 [32m++++[m
+ backend/app/routes/ai_case.py                  |  92 [32m+++++++++++++++++++++++++[m
+ backend/app/routes/ai_pipeline.py              |  41 [32m+++++++++++[m
+ backend/app/routes/conversation.py             |  31 [32m+++++++++[m
+ backend/app/routes/ocr.py                      |  42 [32m+++++++++++[m
+ backend/app/routes/speech.py                   |  32 [32m+++++++++[m
+ backend/app/routes/summarization.py            |  37 [32m++++++++++[m
+ backend/requirements.txt                       | Bin [31m1482[m -> [32m3992[m bytes
+ backend/tests/test_ai.py                       |  24 [32m+++++++[m
+ docs/api.md                                    |  29 [32m++++++++[m
+ docs/architecture.md                           |  61 [32m++++++++++++++++[m
+ 34 files changed, 843 insertions(+), 21 deletions(-)
