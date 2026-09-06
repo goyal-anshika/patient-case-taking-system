@@ -1,30 +1,49 @@
-CLINICAL_FIELDS = [
-    "chief_complaint",
-    "onset",
-    "duration",
-    "location",
-    "severity",
-    "character",
-    "aggravating_factors",
-    "relieving_factors",
-    "associated_symptoms",
-    "past_medical_history",
-    "medications",
-    "allergies",
-]
+CLINICAL_ONTOLOGY = {
+    "chief_complaint": {
+        "label": "Chief Complaint",
+        "question": "What is the main problem that brought you here today?",
+        "required": True,
+    },
 
+    "location": {
+        "label": "Location",
+        "question": "Where exactly are you experiencing the problem?",
+        "required": True,
+    },
 
-QUESTION_MAP = {
-    "chief_complaint": "What is your main health concern?",
-    "onset": "When did this problem start?",
-    "duration": "How long have you had this problem?",
-    "location": "Where exactly do you feel the problem?",
-    "severity": "How severe is it?",
-    "character": "Can you describe what it feels like?",
-    "aggravating_factors": "What makes it worse?",
-    "relieving_factors": "What makes it better?",
-    "associated_symptoms": "Do you have any other symptoms?",
-    "past_medical_history": "Do you have any previous medical conditions?",
-    "medications": "Are you currently taking any medicines?",
-    "allergies": "Do you have any known allergies?",
+    "onset": {
+        "label": "Onset",
+        "question": "When did this problem start?",
+        "required": True,
+    },
+
+    "duration": {
+        "label": "Duration",
+        "question": "How long have you been experiencing it?",
+        "required": True,
+    },
+
+    "character": {
+        "label": "Character",
+        "question": "Can you describe what it feels like?",
+        "required": True,
+    },
+
+    "aggravating_factors": {
+        "label": "Aggravating Factors",
+        "question": "Does anything make it worse?",
+        "required": False,
+    },
+
+    "relieving_factors": {
+        "label": "Relieving Factors",
+        "question": "Does anything make it better?",
+        "required": False,
+    },
+
+    "associated_symptoms": {
+        "label": "Associated Symptoms",
+        "question": "Are you experiencing any other symptoms along with this?",
+        "required": False,
+    },
 }
