@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from app.routes.voice_conversation import router as voice_conversation_router
 from .config import settings
+from .routes import voice_conversation
 from .routes import (
     auth,
     patients,
@@ -52,6 +53,8 @@ app.include_router(ocr.router)
 app.include_router(summarization.router)
 app.include_router(ai_pipeline.router)
 app.include_router(ai_case.router)
+app.include_router(voice_conversation_router)
+app.include_router(voice_conversation.router)
 
 
 @app.get("/")
